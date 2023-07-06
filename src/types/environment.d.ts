@@ -1,5 +1,5 @@
 // Set the typing of your environment variables here 👇
-type MyVariables = {}
+type MyVariables = {};
 
 declare global {
   namespace NodeJS {
@@ -8,4 +8,4 @@ declare global {
   }
 }
 
-export {}
+export {};

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useState } from "react";
 import Button from "@/app/components/Button";
 import Search from "@/app/components/Search";
@@ -14,7 +14,19 @@ const loadUser = async(userName: string) => {
 
     console.log(data)
 
-    const {avatar_url, name, login, created_at, bio, public_repos, followers, following, location, blog, twitter_username, company} = data;
+    const {
+      avatar_url, 
+      name, login, 
+      created_at, 
+      bio, 
+      public_repos, 
+      followers, 
+      following, 
+      location, 
+      blog, 
+      twitter_username, 
+      company
+      } = data;
 
     const userData: UserProps = {
       avatar_url,
