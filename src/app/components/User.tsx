@@ -1,7 +1,9 @@
 import { UserProps } from "../../types/user";
 import { Building, Link, MapPin, Twitter } from "lucide-react";
+import Image from "next/image";
 
 const User = ({
+  avatar_url,
   name,
   login,
   created_at,
@@ -18,7 +20,13 @@ const User = ({
     <div className="xl:flex xl:flex-col xl:px-4 space-y-3">
       <div className="flex gap-5 items-center">
         <div className=" bg-slate-950 rounded-full w-20 h-20">
-          {/* <Image src={avatar_url} width={20} height={20} alt="" className="rounded-full"/>   */}
+          <Image
+            src={avatar_url}
+            width={80}
+            height={80}
+            alt="Avatar Github"
+            className="rounded-full"
+          />
         </div>
         <div className="flex flex-col space-y-1 xl:space-y-0 text-xs xl:flex-row xl:gap-32 xl:ml-3">
           <div className="">
@@ -70,7 +78,7 @@ const User = ({
             )}
           </span>
           <span>
-            <a href="https" target="_blank" className="flex gap-2">
+            <a href={blog} target="_blank" className="flex gap-2">
               <Link size={16} />
               {blog ? (
                 `${blog}`
@@ -82,15 +90,13 @@ const User = ({
         </div>
 
         <div className="flex flex-col gap-3">
-          <span>
-            <a href="https" target="_blank" className="flex gap-2">
-              <Twitter size={16} />
-              {twitter_username ? (
-                `${twitter_username}`
-              ) : (
-                <span className="text-gray-400">Twitter Not Available</span>
-              )}
-            </a>
+          <span className="flex gap-2">
+            <Twitter size={16} />
+            {twitter_username ? (
+              `${twitter_username}`
+            ) : (
+              <span className="text-gray-400">Twitter Not Available</span>
+            )}
           </span>
           <span className="flex gap-2">
             <Building size={16} />
