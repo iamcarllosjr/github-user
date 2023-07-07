@@ -2,8 +2,6 @@ import { UserProps } from "../../types/user";
 import { Building, Link, MapPin, Twitter } from "lucide-react";
 
 const User = ({
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  avatar_url,
   name,
   login,
   created_at,
