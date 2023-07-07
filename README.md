@@ -1,3 +1,4 @@
+#Github User Finder (Localizador de usuários do Github) projeto criado com NextJS, TailwindCSS e TypeScript.
 # ✨ Template start for Nextjs 13 with Typescript ✨
 
 Embedded technology list:
@@ -25,5 +26,3 @@ npx create-next-app <name-of-your-project> -e https://github.com/AugustoTI/templ
   # or
 pnpm create next-app <name-of-your-project> -e https://github.com/AugustoTI/template-next-ts
 ```
-
-Github User Finder (Localizador de usuários do Github) projeto criado com NextJS, TailwindCSS e TypeScript.
