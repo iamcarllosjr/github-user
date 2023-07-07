@@ -8,8 +8,8 @@ export const metadata: Metadata = {
 };
 
 interface RootLayoutProps {
-  children: ReactNode
-};
+  children: ReactNode;
+}
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
